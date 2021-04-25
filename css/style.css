@@ -1,0 +1,322 @@
+html{
+  font-family: 'Noto Serif KR', serif;
+  font-family: 'Merriweather', serif;
+}
+
+header{
+  background-color: #9A52EE;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #e8491d 3px solid;
+  width: 100%;
+  height: 50px;
+  position: relative;z-index: 20;
+}
+
+.content{
+  width: 100%;
+  min-height: 100%;
+  position: relative;z-index: 10;
+  margin: -50px 0 -50px 0;
+}
+
+footer{
+  width: 100%;
+  height: 50px;
+  position: relative;z-index: 20;
+  overflow: hidden;
+}
+
+nav ul {
+  list-style:none;     
+}
+
+nav ul li {
+  border:1px solid #9a52ee;
+  float: right;
+  padding:10px;
+  margin: 10px 20px;
+  font-size: 15px; 
+}
+
+a:hover{
+  text-decoration: none;  
+  cursor:pointer; 
+  color: white;
+}
+
+#portfolio a:hover {
+  color: #5802c2;
+}
+
+#teamproject a:hover{
+  color: #5802c2;
+}
+
+a:active{
+  color: #e8491d;
+}
+
+a:visited{
+  text-decoration: none;
+  
+}
+
+li a {
+  text-decoration: none;
+  transition: color 0.5s ease-in-out;
+}
+
+html, body {
+  height: 100%;
+}
+
+.content {
+  background-color: white;
+  clear: both; 
+  width: 65%;
+  padding: 100px 500px 200px;  
+  text-align: left;
+}
+
+.outer{
+  display: table;
+  width: 100%;
+  height:100vh;
+}
+
+.inner{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.module_outer {
+  position:relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+.module {
+  width: 100%;
+  height: 100%;
+  position:relative;
+  display: inline-block;
+  --x: 0;
+  --y: 0;
+  background: url('/image/nebula-2253941_960_720.webp') 50% no-repeat;
+  background-size: 200%;
+  background-position: var(--x) var(--y);
+  pointer-events: none;
+}
+
+.title{
+  position:relative;
+  display: inline-block;
+  width: 50%;
+  margin-top: 20%;
+  font-size: 8rem;
+  font-weight: 800;
+  pointer-events: none;
+  z-index: 9;
+  color: aliceblue;
+
+  background: linear-gradient(to left, #5802c2, #5673bc, #7b8fc2);
+
+ -webkit-background-clip: text;         /*글씨에 배경까지 보이게 만드는효과*/
+
+ -webkit-text-fill-color: transparent;
+
+ text-shadow: 2px 2px 2px white;
+}
+
+#item, #github {
+  position:relative;
+  width:500px;
+  height:auto;
+  padding:15px 20px;
+  margin:0;
+}
+
+#item p {
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+#item img{
+  width: 220px;
+  height: 220px;
+}
+
+#github img{
+  width: 300px;
+  height: 200px;
+}
+
+button {
+  background-color:rgba(255,255,255,0.7);;
+  padding:5px;
+  border:1px solid #ccc;
+  font-size:0.8em;			
+}
+.over {
+  position:absolute;
+  left:30px;
+  bottom:30px;
+}
+
+.detail {
+  width:800px;
+  text-align:left;			
+  line-height:1.8;
+  display:none;
+}
+
+ .highlight {
+   font-weight: bold;
+ }
+
+#portfolio {
+  line-height:40px; 
+}
+
+ .docat1{
+  width: 40%; 
+  border-radius: 50%;
+}
+
+table {
+  font-size: 15px;
+  float: left;
+  margin: 10px;
+  border-collapse: collapse;  /*선 하나만*/
+}
+
+table th,td {
+border:1px solid #ccc;
+padding: 20px;
+}
+
+table th {
+  text-align: center;
+}
+
+h1 {
+  clear: both;
+}
+
+.name {
+  width: 340px;
+}
+
+video {
+  width: 800px;
+  height: 500px;
+}
+
+#px {
+  font-size: 15px;
+}
+
+#memo {
+  font-size: 15px;
+  line-height: normal;
+}
+
+#longtable {
+  width: 1033px;
+}
+
+
+
+
+@media screen and (max-width: 425px){
+
+body {max-width: 425px}
+header {border: #9A52EE; background-color: #9A52EE;}
+nav ul li {flex-wrap: wrap; font-size: 10px; margin: 0; padding: 4px;} 
+.title{font-size: 50px;}
+
+video {justify-content: flex-start; 
+  position: absolute;
+  left: 50px;
+  top: 50px;
+width: 300px; height: 300px;}
+
+body {
+  max-width: 425px;
+}
+
+video {justify-content: flex-start; 
+  position: relative;
+  left: -480px;
+  width: 300px; height: 300px;
+}
+
+.content p, h1, h2, h3, h4, hr,table, img {
+  position: relative;
+  left: -480px;
+}
+
+#window {
+  width: 300px;
+}
+
+#portfolio li{
+  position: relative;
+  left: -480px;
+}
+
+footer {
+  width: 100%;
+  font-size: 10px;
+  position: relative;
+  top: 800px;
+}
+
+#longtable {
+  width: auto;
+}
+
+.over {
+  left: -450px;
+}
+
+}
+
+@media screen and (min-width: 426px) and (max-width:768px) {
+  footer {
+    width: 100%;
+    font-size: 10px;
+    position: relative;
+  }
+  header {border: #9A52EE; background-color: #9A52EE;}
+  nav ul li {flex-wrap: wrap; font-size: 10px; margin: 0; padding: 4px;} 
+
+  body{
+    max-width: 768px;
+  }
+  video {justify-content: flex-start; 
+    position: relative;
+    left: -400px;
+    width: 500px; height: 500px;
+}
+
+  .content p, h1, h2, h3, h4, hr, img, table {
+    position: relative;
+    left: -400px;
+  }
+  #portfolio li{
+    position: relative;
+    left: -400px;
+  }
+  #longtable {
+    width: auto;
+  }
+  .over {
+    left: -370px;
+  }
+
+}

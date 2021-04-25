@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="HTML5, CSS3, Javascript, Web design, 웹 디자인">
+  <meta name="description" content="멋진 웹서비스를 구현합니다.">
+  <meta name="author" content="Yerim Lee, 이예림">
+  <meta name="portfolio" content="프로젝트,자기소개서">
+  <link rel="stylesheet" href="css/style.css">
+  <title>개인 홈페이지</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li> <a href="index.html">Home</a></li>
+        <li> <a href="about.html">About</a></li>
+        <li> <a href="profile.html">Profile</a></li>
+        <li class="current"> <a href="portfolio.html">Portfolio</a></li>
+        <li> <a href="teamproject.html">Teamproject</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="content">
+
+    <div id="github">
+      <img src="./image/git.png" alt="">
+      <button class="over" id="open" onclick="showDetail()">Click!</button>
+      <div id="desc" class="detail">
+
+        <div id="portfolio">
+          <h1> My skills</h1>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li >Javascript</li>
+            <li >Python</li>
+            <li >C</li>
+            <br>
+          </ul>
+          <hr color="red">
+          <h1 id="px">Open Source</h1>
+          <br><br>
+          <h1>Github</h1>
+          <p> <a href="https://github.com/Yerim-Lee" target="_blank">https://github.com/Yerim-Lee</a></p>
+          <br>
+          <h1>Python</h1>
+          <p> <a href="Yerim.pythonanywhere.com" target="_blank"> Yerim.pythonanywhere.com </a></p>
+          <br>
+          <h1>Netlify</h1>
+          <p> <a href="https://app.netlify.com/teams/yerim-lee/overview" target="_blank">
+              https://app.netlify.com/teams/yerim-lee/osverview </a></p>
+          <br><br><br>
+          <hr color="red">
+          <h1 id="px">Project</h1><br>
+          <br>
+          <h2>웹서버애플리케이션</h2>
+          <p id="memo">메모를 저장,수정,삭제하고 관리할 수 있는 메모장 앱입니다. </p>
+          <p id="memo"><span class="highlight">웹 프레임 워크</span>:Django</p>
+          <p id="memo"><span class="highlight">개발 언어</span>:Python, Javascript</p>
+          <p id="memo"><span class="highlight">DB</span>:SQLite Expert Personal</p>
+          <a href="./ppt/메모장.pptx" download>PPT Download</a><br>
+          <br>
+          <h2>C언어프로그램</h2>
+          <p id="memo">학점 등급 계산 및 평균 계산을 할 수 있는 학점 계산기 프로그램입니다.</p>
+          <p id="memo"><span class="highlight">개발 언어</span>:C언어</p>
+          <a href="./ppt/학점계산기.pptx" download>PPT Download</a>
+          <br><br><br>
+          <button id="close" onclick="hideDetail()">close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showDetail() {
+      document.querySelector('#desc').style.display = "block";	// 상세 설명 부분을 화면에 표시
+      document.querySelector('#open').style.display = "none";   // '상세 설명 보기' 단추를 화면에서 감춤
+    }
+
+    function hideDetail() {
+      document.querySelector('#desc').style.display = "none";	   // 상세 설명 부분을 화면에서 감춤
+      document.querySelector('#open').style.display = "block";	 // '상세 설명 보기' 단추를 화면에 표시 
+    }
+  </script>
+
+  <footer>
+    <p>
+      Copyright &copy; 2021, 중부대학교 정보보호학과 91708015 이예림
+    </p>
+  </footer>
+</body>
+
+</html>
+</body>
+
+</html>
